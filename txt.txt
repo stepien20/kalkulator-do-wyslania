@@ -1,0 +1,33 @@
+wyszukac display
+i quese all wszystkie buttony
+
+robisz tablice ze znakami
+i tablice ze cyframi
+
+
+
+robisz puste stringi num1, num2 operacja+
+
+
+funkcja ktora przyjmuje value z przycisku
+
+jezeli value jest w tablicy z cyframi to sprawdzasz czy juz jest przypisany znak operacji
+
+jezeli nie to
+
+num1=to value
+
+jezeli istnieje to
+cos tam
+
+
+jezeli to operacja 
+to przypisujesz znak dzialania
+
+else
+
+sprawdz czy istnieje wszystko 
+petla
+
+czy to jest operacja ( include tablica)
+jezeli nie to przypisujesz -

@@ -1,0 +1,138 @@
+body{
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    background: rgb(66,58,208);
+background: linear-gradient(300deg, rgba(66,58,208,1) 19%, rgba(9,27,121,1) 50%, rgba(89,9,121,1) 82%);
+}
+.kalkulator{
+    margin-top: 50px;
+    width: 400px;
+    height: 750px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(1fr,6);
+    grid-template-areas: 
+    "display display display display"
+    "numbers numbers numbers operations"
+    "numbers numbers numbers operations"
+    "numbers numbers numbers operations"
+    "numbers numbers numbers operations"
+    "numbers numbers numbers operations";
+    border: 6px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 40px 7px rgba(66, 68, 90, 1);
+-moz-box-shadow: 0px 0px 40px 7px rgba(66, 68, 90, 1);
+box-shadow: 0px 0px 40px 7px rgba(31, 31, 62, 1);;
+}
+#displayplace{
+    padding: 0.4rem 0.3rem;
+    grid-area: display;
+    width: auto;
+    height: auto;
+    background-color: rgb(190, 144, 87);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-bottom: 3px solid black;
+   font-size: 2.5rem;
+   text-shadow: 3px 3px 5px rgb(124, 88, 44);
+}
+#numbers{
+    grid-area: numbers;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.numbers{
+    max-height: 575px;
+    height: 20%;
+    border-radius: 1px;
+    flex-basis: 33.33%;
+    border: 2px solid black;
+    font-size: 3rem;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+#operations{
+    grid-area: operations;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+.operations{
+    max-height: 575px;
+    width: 100%;
+    border: 2px solid black;
+    font-size: 3rem;
+    background-color: rgb(27, 207, 105);
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+    height: 20%;
+}
+.operations:hover{
+    background-color: rgb(24, 173, 88);
+    color: rgb(164, 182, 62);
+}
+.numbers:nth-child(-n + 13){
+    background-color: rgba(52, 205, 186, 1);
+}
+.numbers:hover:nth-child(-n + 13){
+    background-color: rgb(42, 151, 139);
+    color: rgb(164, 182, 62);
+}
+.numbers:nth-child(n + 14){
+    background-color: rgb(52, 144, 205);
+}
+.numbers:hover:nth-child(n + 14){
+    background-color: rgb(41, 112, 159);
+    color: rgb(164, 182, 62);
+}
+p{
+    display: block;
+    margin:0px;
+    padding: 0px;
+}
+#pamiecnum{
+    font-size: 1rem;
+    margin: 0px;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#pamiecop{
+    font-size: 1rem;
+    margin: 0px;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#display{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
+.operations:nth-child(1){
+    background-color: rgb(187, 104, 207);
+}
+.operations:nth-child(1):hover{
+    background-color: rgb(153, 86, 170);
+}
+.numbers:nth-child(-n+3){
+    background-color: rgb(187, 104, 207);
+}
+.numbers:nth-child(-n+3):hover{
+    background-color: rgb(153, 86, 170);
+}
